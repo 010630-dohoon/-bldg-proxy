@@ -35,6 +35,3 @@ def get_building_name():
         return jsonify({"bldNm": bldNm})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
-if __name__ == '__main__':
-    app.run()
